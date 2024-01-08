@@ -9,19 +9,19 @@ public class List {
 private ArrayList<Song> songs = new ArrayList<Song>();
 
 public List() {
-        songs.add(new Song("better off", "Ariana Grande", 140668461));
-        songs.add(new Song("Streets", "Doja Cat", 956143304));
-        songs.add(new Song("Low", "SZA", 223771570));
-        songs.add(new Song("Crew Love", "Drake", 326163366));
-        songs.add(new Song("G.O.M.D", "J.Cole", 63615388));
-        songs.add(new Song("White Noise", "Disclosure", 84906452));
-        songs.add(new Song("Escapism", "RAYE", 684972182));
-        songs.add(new Song("Foreplay", "Jalen Santoy", 217782490));
-        songs.add(new Song("Happier than Ever", "Billie Eilish", 1195914370));
-        songs.add(new Song("Party in the U.S.A.", "Miley Cyrus", 1420203830));
+        songs.add(new Song("better off", "Ariana Grande", 1406684));
+        songs.add(new Song("Streets", "Doja Cat", 9561433));
+        songs.add(new Song("Low", "SZA", 2237715));
+        songs.add(new Song("Crew Love", "Drake", 3261633));
+        songs.add(new Song("G.O.M.D", "J.Cole", 636153));
+        songs.add(new Song("White Noise", "Disclosure", 849064));
+        songs.add(new Song("Escapism", "RAYE", 6849721));
+        songs.add(new Song("Foreplay", "Jalen Santoy", 2177824));
+        songs.add(new Song("Happier than Ever", "Billie Eilish", 11959143));
+        songs.add(new Song("Party in the U.S.A.", "Miley Cyrus", 14202038));
 }
 
-public void printSongs() { // Feature 3: Pring a list of the songs stored
+public void printSongs() { // Feature 3: Print a list of the songs stored
         for (Song printSong : songs) {
             System.out.println("Title: " + printSong.gettitle() + ",  Artist: " + printSong.getartist() + ",  Playcount: " + printSong.getplayCount());
         }
@@ -41,6 +41,8 @@ public void addSong() { // Feature 1: Add a new song to the list of songs
             Song newSong = new Song(Title, Artist, playCount);
 
             songs.add(newSong);
+
+            System.out.println("This song has been added successfully.");
         }
 }
 
